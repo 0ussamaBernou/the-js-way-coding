@@ -35,8 +35,26 @@ console.log(min(19, 9));  // Must show 9
 console.log(min(1, 1));   // Must show 1
 
 // TODO: complete calculate program
+          /* Calculator */
 let calculate = (num1, operator, num2)=> {
-  return Number(num1) + operator.replace(/"/g, '') + Number(num2)
+  let result 
+  switch(operator){
+    case "+":
+      result = num1 + num2
+      break
+    case "*":
+      result = num1 * num2
+      break
+    case "-":
+      result = num1 - num2
+      break
+    case "/":
+      result = num1 / num2
+      break
+    default:
+      console.log("enter a valid operator!")
+  }
+  return result
 }
 // To debug ^
 console.log(calculate(4, "+", 6));  // Must show 10
