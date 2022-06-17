@@ -56,7 +56,7 @@ let calculate = (num1, operator, num2)=> {
   }
   return result
 }
-// To debug ^
+
 console.log(calculate(4, "+", 6));  // Must show 10
 console.log(calculate(4, "-", 6));  // Must show -2
 console.log(calculate(2, "*", 0));  // Must show 0

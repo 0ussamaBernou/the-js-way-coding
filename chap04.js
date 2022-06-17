@@ -67,3 +67,27 @@ function carousel() {
     }
   }
   fizzBuzz()
+
+  //after implementing DRY :
+
+function drierFizzBuzz() {
+   const fIZZ = "Fizz"
+   const bUZZ = "Buzz"
+
+   function divisible(numerator, denominator) {
+      return numerator % denominator == 0
+   }
+   for (let i = 1; i <= 100; i++) {
+      let fizz = divisible(i, 3)
+      let buzz = divisible(i, 5)
+
+      if (fizz && buzz) {
+         console.log(fIzz + bUZZ)
+      } else if (fizz) {
+         console.log(fIzz)
+      } else if (buzz) {
+         console.log(bUZZ)
+      } else
+         console.log(i)
+   }
+}
